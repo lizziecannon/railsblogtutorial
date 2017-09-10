@@ -1,0 +1,17 @@
+<h1>New Article</h1>
+<%= form_with articles_path do |form| %>
+  <p>
+    <%= form.label_tag :title %><br>
+    <%= form.text_field :title %>
+  </p>
+
+  <p>
+    <%= form.label_tag :text%><br>
+    <%= form.text_area :text %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
+ac
